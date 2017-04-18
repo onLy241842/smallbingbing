@@ -1,0 +1,123 @@
+{
+	"style" : "default",
+	"config" : "save_小冰冰传奇.dat",
+	"width" : 550,
+	"height" : 960,
+	"cancelname" : "取消",
+	"okname" : "确定",
+	"views" : [
+	
+			{
+         "text" : "功能说明",
+         "type" : "Page",
+         "views" : [
+					{
+								"align" : "left",
+								"color" : "0,0,225",
+								"size" 	: "20",
+								"text" 	: "使用方法：home键向右\n分辨率 720*1280 1080*1920 \n建议使用盘果模拟器\n功能1 自动刷战役 更多功能正在开发",
+								"type" 	: "Label"
+            },
+						{
+               "color" : "100,110,200",
+               "extra" : [          //附加属性指定
+                  {
+                     "goto" : "qq",     //跳转到QQ咨询
+                     "text" : "629431577"
+                  }
+               ],
+               "size" : 20,
+               "text" : "bug报告，功能需求，QQ群:1602127440",
+               "type" : "Label"
+            },
+						
+						{
+               "id" : "functionchoose",
+							"list" : "自动远征,自动战役,自动漩涡",
+               "select" : "0",
+               "size" : "20",
+               "type" : "RadioGroup",
+               "orientation" : "horizontal" //选项排布方式为横排
+            },
+						 {
+								"align" : "left",
+								"color" : "0,0,225",
+								"size" 	: "20",
+								"text" 	: "自动远征功能请在远征界面中打开",
+								"type" 	: "Label"
+            },
+						 {
+							 	"align" : "left",
+								"color" : "0,0,225",
+								"size" 	: "20",
+								"text" 	: "自动战役需到自动战役选项卡中设置参数",
+								"type" 	: "Label"
+							 
+							
+            }
+						
+						
+         ]
+      },
+			{
+         "text" : "自动战役",
+         "type" : "Page",
+         "views" : [
+						 
+				
+				
+            {
+								"align" : "left",
+								"color" : "0,0,225",
+								"size" 	: "20",
+								"text" 	: "自动刷任一章战役，无需开启自动战斗和扫荡\n要刷第几章战役，就在第几章战役地图上启动脚本，并选择下拉窗口中的第几章。PS：章节要刷的战役要手动通关一遍，不然有些关卡无法点开！",
+								"type" 	: "Label"
+            },
+						{
+               "align" : "left",
+               "color" : "0,0,0",
+               "size" : "20",
+							"text" : "上场英雄个数",
+               "type" : "Label"
+            },
+            {
+               "id" : "heronum",
+							"list" : "3个,4个,5个",
+               "select" : "2",
+               "size" : "20",
+               "type" : "RadioGroup",
+               "orientation" : "horizontal" //选项排布方式为横排
+            },
+						{
+               "align" : "left",
+               "color" : "0,0,0",
+               "size" : "20",
+							 "text" : "要刷的战役章节",
+               "type" : "Label"
+            },
+            {
+               "id" : "chapter",
+               "list" : "第2章,第3章,第4章,第5章,第6章,第7章,第8章",
+               "select" : "0",
+               "size" : "20",
+               "type" : "ComboBox"
+            },
+						{
+               "align" : "left",
+               "color" : "0,0,0",
+               "size" : "20",
+							"text" : "战役模式",
+               "type" : "Label"
+            },
+            {
+							"id" : "mode",
+							"list" : "普通模式,精英模式",
+               "select" : "0",
+               "size" : "20",
+               "type" : "RadioGroup",
+               "orientation" : "horizontal" //选项排布方式为竖排
+            }
+					]
+      }
+	]
+}
